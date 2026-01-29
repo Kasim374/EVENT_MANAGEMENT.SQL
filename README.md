@@ -9,7 +9,7 @@ Database: MySQL
 Language: SQL
 
 --Database Schema--
-1️⃣ events
+(1)events
 Stores event-related information.
 event_id (Primary Key)
 event_name
@@ -19,26 +19,26 @@ total_seats
 available_seats
 organizer_id
 
-2️⃣ venues
+(2) venues
 Stores venue details.
 venue_id (Primary Key)
 venue_name
 location
 capacity
 
-3️⃣ organizers
+(3) organizers
 Stores organizer information.
 organizer_id (Primary Key)
 organizer_name
 email
 
-4️⃣ attendees
+(4) attendees
 Stores attendee information.
 attendee_id (Primary Key)
 attendee_name
 email
 
-5️⃣ tickets
+(5) tickets
 Stores ticket booking details.
 ticket_id (Primary Key)
 event_id (Foreign Key)
@@ -46,7 +46,7 @@ attendee_id (Foreign Key)
 price
 booking_date
 
-6️⃣ payments
+(6) payments
 Stores payment information.
 payment_id (Primary Key)
 ticket_id (Foreign Key)
